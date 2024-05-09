@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e6cea8b28e5dda4ba3fab918ba3db50, type: 3}
+  m_Name: Salem
+  m_EditorClassIdentifier: 
+  propic: {fileID: 21300000, guid: ed137358371bf50408e9b4ba1a5dac4b, type: 3}
+  name: Salem AlNaemi
+  dob: 07/08/1979
+  username: Salnaemi
+  email: salema_1979@gmail.com
+  unified_number: 1234567
+  uid: 7841979123456781
+  phone_no: 971501234567
+  traffic_no: 1210001234

@@ -6,6 +6,15 @@ using TMPro;
 
 public class UI_Manager : MonoBehaviour
 {
+	public List<user_info> info;
+	public int user;
+	public void	sign_in()
+	{
+		int rand = Random.Range(0, 2);
+		user = rand;
+		Debug.Log("the user selected is " + info[user]);
+		//switch 
+	}
     public void undeveloped_services()
 	{
 		Debug.Log("Coming Soon!");
@@ -16,4 +25,6 @@ public class UI_Manager : MonoBehaviour
 		//camera switch
 		
 	}
+
+
 }
