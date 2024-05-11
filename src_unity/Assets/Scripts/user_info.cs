@@ -5,8 +5,8 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "user_info", menuName = "info")]
 public class user_info : ScriptableObject
 {
-    public Sprite propic; 
-    public string name;
+    public Sprite propic;
+    public string user_name;
     public string dob;
     public string username;
     public string email;
