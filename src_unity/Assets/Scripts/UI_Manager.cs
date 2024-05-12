@@ -10,11 +10,16 @@ public class UI_Manager : MonoBehaviour
 	public int user;
 
 	[Header("Canvases")]
-	public GameObject SignInPage;
+	public GameObject SignInCanvas;
 	public GameObject FakeLoadScreen;
-	public GameObject Home;
+
+	public GameObject HomeCanvas;
+	public GameObject ProfileCanvas;
+	public GameObject ServicesCanvas;
+	public GameObject SocialCanvas;
 
 	public GameObject NavBar;
+
 	public void sign_in()
 	{
 		int rand = Random.Range(0, 2);
@@ -25,18 +30,58 @@ public class UI_Manager : MonoBehaviour
 
 	IEnumerator SignInIEnum()
 	{
-		SignInPage.transform.GetChild(2).gameObject.SetActive(false);
-		SignInPage.GetComponent<Animator>().SetBool("Fade", true);
+		SignInCanvas.transform.GetChild(2).gameObject.SetActive(false);
+		SignInCanvas.GetComponent<Animator>().SetBool("Fade", true);
 		yield return new WaitForSeconds(1.7f);
-		SignInPage.GetComponent<Canvas>().enabled = false;
+		SignInCanvas.GetComponent<Canvas>().enabled = false;
 		FakeLoadScreen.GetComponent<Canvas>().enabled = true;
 		yield return new WaitForSeconds(3f);
 		FakeLoadScreen.GetComponent<Canvas>().enabled = false;
-		Home.GetComponent<Canvas>().enabled = true;
-		// NavBarCanvas.enabled = true;
+		HomeCanvas.GetComponent<Canvas>().enabled = true;
 		NavBar.GetComponent<Canvas>().enabled = true;
 	}
 
+	private void all_false()
+	{
+		HomeCanvas.GetComponent<Canvas>().enabled = false;
+		ProfileCanvas.GetComponent<Canvas>().enabled = false;
+		ServicesCanvas.GetComponent<Canvas>().enabled = false;
+		SocialCanvas.GetComponent<Canvas>().enabled = false;
+	}
+
+	public void navigate_home()
+	{
+		all_false();
+		HomeCanvas.GetComponent<Canvas>().enabled = true;
+	}
+
+	public void navigate_profile()
+	{
+		all_false();
+		ProfileCanvas.GetComponent<Canvas>().enabled = true;
+	}
+
+	public void navigate_services()
+	{
+		all_false();
+		ServicesCanvas.GetComponent<Canvas>().enabled = true;
+	}
+
+	public void navigate_social()
+	{
+		all_false();
+		SocialCanvas.GetComponent<Canvas>().enabled = true;
+	}
+
+	public void sign_out()
+	{
+		HomeCanvas.GetComponent<Canvas>().enabled = false;
+		ProfileCanvas.GetComponent<Canvas>().enabled = false;
+		ServicesCanvas.GetComponent<Canvas>().enabled = false;
+		SocialCanvas.GetComponent<Canvas>().enabled = false;
+		NavBar.GetComponent<Canvas>().enabled = false;
+		SignInCanvas.GetComponent<Canvas>().enabled = true;
+	}
 
 	public void undeveloped_services()
 	{
