@@ -10,10 +10,11 @@ public class UI_Manager : MonoBehaviour
 	public int user;
 
 	[Header("Canvases")]
-	public	Canvas NavBarCanvas;
-	public	GameObject SignInPage;
-	public	GameObject FakeLoadScreen;
-	public	GameObject Home;
+	public GameObject SignInPage;
+	public GameObject FakeLoadScreen;
+	public GameObject Home;
+
+	public GameObject NavBar;
 	public void sign_in()
 	{
 		int rand = Random.Range(0, 2);
@@ -32,7 +33,8 @@ public class UI_Manager : MonoBehaviour
 		yield return new WaitForSeconds(3f);
 		FakeLoadScreen.GetComponent<Canvas>().enabled = false;
 		Home.GetComponent<Canvas>().enabled = true;
-		NavBarCanvas.enabled = true;
+		// NavBarCanvas.enabled = true;
+		NavBar.GetComponent<Canvas>().enabled = true;
 	}
 
 
@@ -41,9 +43,9 @@ public class UI_Manager : MonoBehaviour
 		Debug.Log("Coming Soon!");
 	}
 
-	public void	vehicle_services()
+	public void vehicle_services()
 	{
 		//camera switch
-		
+
 	}
 }
