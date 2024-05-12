@@ -80,7 +80,11 @@ public class VoiceManager : MonoBehaviour
         SpeechToText.Instance.onPartialResultsCallback = OnPartialResult;
 #endif
         TextToSpeech.Instance.onStartCallBack = OnSpeakStart;
-        TextToSpeech.Instance.onDoneCallback = OnSpeakStop;
+        TextToSpeech.Instance.onDoneCallback = (() =>
+        {
+            Stop();
+            OnSpeakStop();
+        });
         CheckPermission();
     }
 

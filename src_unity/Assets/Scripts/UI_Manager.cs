@@ -10,10 +10,6 @@ public class UI_Manager : MonoBehaviour
 	public List<user_info> info;
 	public int user;
 
-	public Button EnableAssistantButton;
-	public Button DisableAssistantButton;
-	public VoiceManager Assistant;
-
 	public void sign_in()
 	{
 		int rand = Random.Range(0, 2);
@@ -29,24 +25,6 @@ public class UI_Manager : MonoBehaviour
 	public void vehicle_services()
 	{
 		//camera switch
-	}
-
-	public void EnableAssistant()
-	{
-		Button btn = EnableAssistantButton.GetComponent<Button>();
-		VoiceManager assistant = Assistant.GetComponent<VoiceManager>();
-		// btn.onClick.AddListener(Assistant.StartListening);
-
-		btn.onClick.AddListener(assistant.OnSpeakStart);
-
-	}
-
-	public void DisableAssistant()
-	{
-		Button btn = DisableAssistantButton.GetComponent<Button>();
-		VoiceManager assistant = Assistant.GetComponent<VoiceManager>();
-		// btn.onClick.AddListener(Assistant.StopListening);
-		btn.onClick.AddListener(assistant.OnSpeakStop);
 	}
 
 }
