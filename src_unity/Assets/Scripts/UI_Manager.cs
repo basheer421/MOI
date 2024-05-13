@@ -20,6 +20,12 @@ public class UI_Manager : MonoBehaviour
 
 	public GameObject NavBar;
 
+	private int imageIndex = 0;
+	private string[] post_links = new string[] {
+		"https://www.instagram.com/uaemgov/p/C61LXNwMX5w/?img_index=2",
+		"https://www.instagram.com/uaemgov/p/C66VieDt7dW/?img_index=1"
+		};
+
 	public void sign_in()
 	{
 		int rand = Random.Range(0, 2);
@@ -90,6 +96,29 @@ public class UI_Manager : MonoBehaviour
 		SocialCanvas.GetComponent<Canvas>().enabled = false;
 		NavBar.GetComponent<Canvas>().enabled = false;
 		SignInCanvas.GetComponent<Canvas>().enabled = true;
+	}
+
+	public void Social_next_image()
+	{
+		imageIndex = imageIndex == 0 ? 1 : 0; // Change if more images are added
+
+		string imageName = "post#" + imageIndex;
+		Image imageToLoad = SocialCanvas.transform.Find(imageName).GetComponent<Image>();
+		SocialCanvas.transform.Find("MainPost").GetComponent<Image>().sprite = imageToLoad.sprite;
+	}
+
+	public void Social_previous_image()
+	{
+		imageIndex = imageIndex == 0 ? 1 : 0; // Change if more images are added
+
+		string imageName = "post#" + imageIndex;
+		Image imageToLoad = SocialCanvas.transform.Find(imageName).GetComponent<Image>();
+		SocialCanvas.transform.Find("MainPost").GetComponent<Image>().sprite = imageToLoad.sprite;
+	}
+
+	public void Social_open_post()
+	{
+		Application.OpenURL(post_links[imageIndex]);
 	}
 
 	public void undeveloped_services()
