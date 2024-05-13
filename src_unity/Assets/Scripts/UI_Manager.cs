@@ -60,8 +60,7 @@ public class UI_Manager : MonoBehaviour
 		all_false();
 		Canvas canvas = ProfileCanvas.GetComponent<Canvas>();
 		canvas.enabled = true;
-		canvas.GetComponentInChildren<Image>().sprite = info[user].propic;
-		// canvas.GetComponentInChildren<TextMeshProUGUI>().text = info[user].user_name;
+		canvas.transform.Find("profile_image").GetComponent<Image>().sprite = info[user].propic;
 		canvas.transform.Find("user_name").GetComponent<TextMeshProUGUI>().text = info[user].user_name;
 		canvas.transform.Find("uid1").GetComponent<TextMeshProUGUI>().text = info[user].uid;
 		canvas.transform.Find("uid2").GetComponent<TextMeshProUGUI>().text = info[user].uid;
