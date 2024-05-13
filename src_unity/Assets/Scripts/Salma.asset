@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Salma
   m_EditorClassIdentifier: 
   propic: {fileID: 21300000, guid: 3e036b5d8443dfd49ac39b0775de44b5, type: 3}
-  name: Salma AlNaemi
+  user_name: SalmaA74
   dob: 23/04/1974
   username: SalmaA74
   email: salma_1974@gmail.com

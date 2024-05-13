@@ -58,7 +58,17 @@ public class UI_Manager : MonoBehaviour
 	public void navigate_profile()
 	{
 		all_false();
-		ProfileCanvas.GetComponent<Canvas>().enabled = true;
+		Canvas canvas = ProfileCanvas.GetComponent<Canvas>();
+		canvas.enabled = true;
+		canvas.GetComponentInChildren<Image>().sprite = info[user].propic;
+		// canvas.GetComponentInChildren<TextMeshProUGUI>().text = info[user].user_name;
+		canvas.transform.Find("user_name").GetComponent<TextMeshProUGUI>().text = info[user].user_name;
+		canvas.transform.Find("uid1").GetComponent<TextMeshProUGUI>().text = info[user].uid;
+		canvas.transform.Find("uid2").GetComponent<TextMeshProUGUI>().text = info[user].uid;
+		canvas.transform.Find("email").GetComponent<TextMeshProUGUI>().text = info[user].email;
+		canvas.transform.Find("unified_number").GetComponent<TextMeshProUGUI>().text = info[user].unified_number;
+		canvas.transform.Find("traffic_no").GetComponent<TextMeshProUGUI>().text = info[user].traffic_no;
+		canvas.transform.Find("phone_no").GetComponent<TextMeshProUGUI>().text = info[user].phone_no;
 	}
 
 	public void navigate_services()
