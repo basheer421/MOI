@@ -9,6 +9,9 @@ public class UI_Manager : MonoBehaviour
 	public List<user_info> info;
 	public int user;
 
+	[Header("Images")]
+	public	List<Sprite>	license;
+	public	List<Sprite>	registration;
 	[Header("Camera Manager")]
 	public camera_manager camera;
 	[Header("Canvases")]
@@ -19,10 +22,10 @@ public class UI_Manager : MonoBehaviour
 	public GameObject ServicesCanvas;
 	public GameObject SocialCanvas;
 	public GameObject TrafficServicesCanvas;
-
 	public GameObject NavBar;
-
 	private int imageIndex = 0;
+	int	license_idx = 0;
+	int	registration_idx = 0;
 	private string[] post_links = new string[] {
 		"https://www.instagram.com/uaemgov/p/C61LXNwMX5w/?img_index=2",
 		"https://www.instagram.com/uaemgov/p/C66VieDt7dW/?img_index=1"
@@ -176,4 +179,47 @@ public class UI_Manager : MonoBehaviour
 		camera.through_door.enabled = true;
 		camera.door_anim.SetBool("open", false);
 	}
+
+	public	void	flip_license()
+	{
+		if (license_idx == 0)
+		{
+			license_idx ++;
+			ProfileCanvas.transform.GetChild(15).transform.GetChild(0).GetComponent<Image>().sprite = license[license_idx];
+			ProfileCanvas.transform.GetChild(15).transform.GetChild(0).transform.GetChild(0).GetComponent<Image>().enabled = false;
+		}
+		else
+		{
+			license_idx --;
+			ProfileCanvas.transform.GetChild(15).transform.GetChild(0).GetComponent<Image>().sprite = license[license_idx];
+			ProfileCanvas.transform.GetChild(15).transform.GetChild(0).transform.GetChild(0).GetComponent<Image>().enabled = true;
+			ProfileCanvas.transform.GetChild(15).transform.GetChild(0).transform.GetChild(0).GetComponent<Image>().sprite = info[user].propic;
+		}
+	}
+
+	public void	flip_registration()
+	{
+		if (registration_idx == 0)
+		{
+			registration_idx ++;
+			ProfileCanvas.transform.GetChild(15).transform.GetChild(1).GetComponent<Image>().sprite = registration[registration_idx];
+		}
+		else
+		{
+			registration_idx --;
+			ProfileCanvas.transform.GetChild(15).transform.GetChild(1).GetComponent<Image>().sprite = registration[registration_idx];
+		}
+	}
+	public void open_digital_cards()
+	{
+		ProfileCanvas.transform.GetChild(15).gameObject.SetActive(true);
+		NavBar.GetComponent<Canvas>().enabled = false;
+	}
+	public void	back_to_personal_info()
+	{
+		ProfileCanvas.transform.GetChild(15).gameObject.SetActive(false);
+		NavBar.GetComponent<Canvas>().enabled = true;
+	}
+	
+
 }
