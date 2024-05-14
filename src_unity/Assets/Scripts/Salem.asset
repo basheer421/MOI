@@ -21,3 +21,6 @@ MonoBehaviour:
   uid: 7841979123456781
   phone_no: 971501234567
   traffic_no: 1210001234
+  score: 0
+  cars:
+  - Range

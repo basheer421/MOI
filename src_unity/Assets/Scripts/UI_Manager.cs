@@ -55,16 +55,19 @@ public class UI_Manager : MonoBehaviour
 		ProfileCanvas.GetComponent<Canvas>().enabled = false;
 		ServicesCanvas.GetComponent<Canvas>().enabled = false;
 		SocialCanvas.GetComponent<Canvas>().enabled = false;
+		TrafficServicesCanvas.GetComponent<Canvas>().enabled = false;
 	}
 
 	public void navigate_home()
 	{
+		render_main_view();
 		all_false();
 		HomeCanvas.GetComponent<Canvas>().enabled = true;
 	}
 
 	public void navigate_profile()
 	{
+		render_main_view();
 		all_false();
 		Canvas canvas = ProfileCanvas.GetComponent<Canvas>();
 		canvas.enabled = true;
@@ -80,18 +83,21 @@ public class UI_Manager : MonoBehaviour
 
 	public void navigate_services()
 	{
+		render_main_view();
 		all_false();
 		ServicesCanvas.GetComponent<Canvas>().enabled = true;
 	}
 
 	public void navigate_social()
-	{
+	{		
+		render_main_view();
 		all_false();
 		SocialCanvas.GetComponent<Canvas>().enabled = true;
 	}
 
 	public void sign_out()
 	{
+		render_main_view();
 		HomeCanvas.GetComponent<Canvas>().enabled = false;
 		ProfileCanvas.GetComponent<Canvas>().enabled = false;
 		ServicesCanvas.GetComponent<Canvas>().enabled = false;
@@ -138,13 +144,36 @@ public class UI_Manager : MonoBehaviour
 	IEnumerator traffic_services_start_IE()
 	{
 		all_false();
-		camera.traffic_service_view();
-		yield return new WaitForSeconds(6.0f);
+		NavBar.GetComponent<Canvas>().enabled = false;
+		camera.StartCoroutine("into_garage");
+		//camera.traffic_service_view();
+		yield return new WaitForSeconds(2.7f);
 		TrafficServicesCanvas.GetComponent<Canvas>().enabled = true;
+		NavBar.GetComponent<Canvas>().enabled = true;
+	}
+
+	public void	from_traffic_to_all_services()
+	{
+		StartCoroutine("from_traffic_to_all_services_IE");
+	}
+	IEnumerator from_traffic_to_all_services_IE()
+	{
+		all_false();
+		camera.StartCoroutine("outof_garage");
+		yield return new WaitForSeconds(2.7f);
+		ServicesCanvas.GetComponent<Canvas>().enabled = true;
 	}
 
 	public void vehicle_services()
 	{
 		//camera switch
+	}
+
+	void	render_main_view()
+	{
+		camera.menu.enabled = true;
+		camera.door_view.enabled = true;
+		camera.through_door.enabled = true;
+		camera.door_anim.SetBool("open", false);
 	}
 }

@@ -21,3 +21,6 @@ MonoBehaviour:
   uid: 7841974876543211
   phone_no: 971507654321
   traffic_no: 1210004321
+  score: 0
+  cars:
+  - Benz
