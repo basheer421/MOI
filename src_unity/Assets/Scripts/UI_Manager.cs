@@ -9,10 +9,11 @@ public class UI_Manager : MonoBehaviour
 	public List<user_info> info;
 	public int user;
 
+	[Header("Camera Manager")]
+	public camera_manager camera;
 	[Header("Canvases")]
 	public GameObject SignInCanvas;
 	public GameObject FakeLoadScreen;
-
 	public GameObject HomeCanvas;
 	public GameObject ProfileCanvas;
 	public GameObject ServicesCanvas;
@@ -126,9 +127,13 @@ public class UI_Manager : MonoBehaviour
 		Debug.Log("Coming Soon!");
 	}
 
+	public void	traffic_services_start()
+	{
+		camera.traffic_service_view();
+	}
+
 	public void vehicle_services()
 	{
 		//camera switch
-
 	}
 }
