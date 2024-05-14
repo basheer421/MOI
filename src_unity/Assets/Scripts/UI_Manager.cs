@@ -18,6 +18,7 @@ public class UI_Manager : MonoBehaviour
 	public GameObject ProfileCanvas;
 	public GameObject ServicesCanvas;
 	public GameObject SocialCanvas;
+	public GameObject TrafficServicesCanvas;
 
 	public GameObject NavBar;
 
@@ -94,9 +95,11 @@ public class UI_Manager : MonoBehaviour
 		HomeCanvas.GetComponent<Canvas>().enabled = false;
 		ProfileCanvas.GetComponent<Canvas>().enabled = false;
 		ServicesCanvas.GetComponent<Canvas>().enabled = false;
+		TrafficServicesCanvas.GetComponent<Canvas>().enabled = false;
 		SocialCanvas.GetComponent<Canvas>().enabled = false;
 		NavBar.GetComponent<Canvas>().enabled = false;
 		SignInCanvas.GetComponent<Canvas>().enabled = true;
+		SignInCanvas.transform.GetChild(2).gameObject.SetActive(true);
 	}
 
 	public void Social_next_image()
@@ -127,9 +130,17 @@ public class UI_Manager : MonoBehaviour
 		Debug.Log("Coming Soon!");
 	}
 
-	public void	traffic_services_start()
+	public void traffic_services_start()
 	{
+		StartCoroutine("traffic_services_start_IE");
+	}
+
+	IEnumerator traffic_services_start_IE()
+	{
+		all_false();
 		camera.traffic_service_view();
+		yield return new WaitForSeconds(6.0f);
+		TrafficServicesCanvas.GetComponent<Canvas>().enabled = true;
 	}
 
 	public void vehicle_services()
