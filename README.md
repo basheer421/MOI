@@ -83,12 +83,19 @@ Technologies that We used to develop this 3D Edition mobile App:
 - [Creat an account in Unity](https://id.unity.com/en/conversations/9523141d-e73f-499c-9697-7b38ef085baa00ff)
 - Have this software [Unity HUB](https://unity.com/download) installed
 - Have this software [Unity 2021.3.38](https://unity.com/releases/editor/whats-new/2021.3.38) installed
+
+
   
 ## **Follow the steps below**
 
+
 **1. Open Unity HUB Software.**
+
    
 ![install_unity](https://github.com/basheer421/MOI/assets/138756079/296dd41d-ae55-432f-a56d-4c0f43f765ae)
+
+
+
 
 **2. Clone the project and access the folder**
 
@@ -96,28 +103,42 @@ Technologies that We used to develop this 3D Edition mobile App:
 $ git clone https://github.com/basheer421/MOI.git
 ```
 
+
+
+
 **3. In the Unity HUB ADD the project folder**
+
 
 ![opening_the_project](https://github.com/basheer421/MOI/assets/138756079/a02c9588-d476-4219-a216-c8a91cf67c4a)
 
-**If IOS AND ANDROID modules are not installed in the Build settings then download and install**
+
+
+**4. If IOS AND ANDROID modules are not installed in the Build settings then download and install**
+
 
 ```bash
 # Open the build setting inside the Unity Editor.
 # You will see the Android & IOS modules.
 # if they are not highlited then a button of **download** will appear after you press on one of them.
 ```
+
+
 ![modules in build settings](https://github.com/basheer421/MOI/assets/138756079/cbe144ca-d0e2-4b51-b4d7-142a157c023f)
+
+
+
 
 ```bash
 # if you could not find the button these are direct links **FOR WINDOWS ONLY**
 ```
+
 - [IOS MODULE](https://download.unity3d.com/download_unity/7a2fa5d8d101/TargetSupportInstaller/UnitySetup-iOS-Support-for-Editor-2021.3.38f1.exe)
 - [ANDROID MODULE](https://download.unity3d.com/download_unity/7a2fa5d8d101/TargetSupportInstaller/UnitySetup-Android-Support-for-Editor-2021.3.38f1.exe)
 
 
 **[Documentation](https://docs.unity3d.com/hub/manual/InstallHub.html)**
 
+---
 
 
 ## 🤔 How to contribute
