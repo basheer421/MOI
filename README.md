@@ -89,7 +89,7 @@ Technologies that We used to develop this 3D Edition mobile App:
 
 **Open Unity HUB Software.**
    
-(![install_unity](https://github.com/basheer421/MOI/assets/138756079/296dd41d-ae55-432f-a56d-4c0f43f765ae)
+![install_unity](https://github.com/basheer421/MOI/assets/138756079/296dd41d-ae55-432f-a56d-4c0f43f765ae)
 
 **Clone the project and access the folder**
 
