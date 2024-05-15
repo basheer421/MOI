@@ -1,7 +1,7 @@
 <h1 align="center">
 
+![logo-removebg](https://github.com/basheer421/MOI/assets/138756079/c1ef9c56-cc4a-46f6-ad63-a42213fdc85a)
 
-![logo-removebg-preview](https://github.com/basheer421/MOI/assets/138756079/714f2960-4d1e-4efa-8ca9-c8700bd353a5)
 
 </h1>
 
