@@ -57,10 +57,10 @@
 
 - <p style="color: red;">Gamification can revolutionize the way citizens interact with government services. By infusing digital experiences with game, like elements, we aim to increase engagement, streamline service access, and foster a more positive relationship between the public and their government.</p>
 
-## 🔍 Problem:
+# 🔍 Problem:
 - <p style="color: red;">Citizen-government interactions often suffer from issues like complexity, accessibility barriers, and disengagement, leading to frustration among citizens.</p>
 
-## 💡 Solution:
+# 💡 Solution:
 - <p style="color: red;">Our project offers a groundbreaking solution by leveraging gamification and immersive 3D environments to revolutionize these interactions. By employing technologies such as Unity 3D, C#, gamification mechanics, AI-powered chatbots, and interactive 3D elements, we aim to enhance user engagement and simplify the citizen-government interface. To experience the immersive environment, explore our Unity 3D demo. We invite users to provide feedback to continually improve the user experience. Contributions are welcome; simply follow the outlined steps in the contribution guide.</p>
 
 
