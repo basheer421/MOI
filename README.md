@@ -41,9 +41,9 @@
 
 
 ### 🔍 Problem:
-- <p style="color: red;">General Challenges Citizen-government interactions are critical yet often fraught with challenges such as complexity and inaccessibility. These barriers can lead to significant frustration and disengagement among citizens. Often, users are either compelled to rely on call centers or abandon their tasks midway due to these hurdles. This lack of efficient interaction mechanisms can diminish the quality of civic engagement and hinder effective service delivery.</p>
+- <p style="color: red;">General Challenges: Citizen-government interactions are critical yet often fraught with challenges such as complexity and inaccessibility. These barriers can lead to significant frustration and disengagement among citizens. Often, users are either compelled to rely on call centers or abandon their tasks midway due to these hurdles. This lack of efficient interaction mechanisms can diminish the quality of civic engagement and hinder effective service delivery.</p>
 
-- <p style="color: red;">Specific User Challenges Additionally, there is a segment of users, particularly people of determination, who face even more significant challenges. The standard interaction modes do not cater effectively to their needs, making it imperative to tailor solutions that enhance their accessibility and ease of use.</p>
+- <p style="color: red;">Specific User Challenges: Additionally, there is a segment of users, particularly people of determination, who face even more significant challenges. The standard interaction modes do not cater effectively to their needs, making it imperative to tailor solutions that enhance their accessibility and ease of use.</p>
 
 ### 💡 Solution:
 - <p style="color: red;">Gamification and Immersive Experience
