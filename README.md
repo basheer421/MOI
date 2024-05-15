@@ -86,36 +86,36 @@ Technologies that We used to develop this 3D Edition mobile App:
   
 ## **Follow the steps below**
 
-**Open Unity HUB Software.**
+**1. Open Unity HUB Software.**
    
 ![install_unity](https://github.com/basheer421/MOI/assets/138756079/296dd41d-ae55-432f-a56d-4c0f43f765ae)
 
-**Clone the project and access the folder**
+**2. Clone the project and access the folder**
 
 ```bash
 $ git clone https://github.com/basheer421/MOI.git
 ```
 
-**In the Unity HUB ADD the project folder**
+**3. In the Unity HUB ADD the project folder**
 
 ![opening_the_project](https://github.com/basheer421/MOI/assets/138756079/a02c9588-d476-4219-a216-c8a91cf67c4a)
 
 **If IOS AND ANDROID modules are not installed in the Build settings then download and install**
 
+```bash
+# Open the build setting inside the Unity Editor.
+# You will see the Android & IOS modules.
+# if they are not highlited then a button of **download** will appear after you press on one of them.
+```
+![modules in build settings](https://github.com/basheer421/MOI/assets/138756079/cbe144ca-d0e2-4b51-b4d7-142a157c023f)
+
+```bash
+# if you could not find the button these are direct links **FOR WINDOWS ONLY**
+```
 - [IOS MODULE](https://download.unity3d.com/download_unity/7a2fa5d8d101/TargetSupportInstaller/UnitySetup-iOS-Support-for-Editor-2021.3.38f1.exe)
 - [ANDROID MODULE](https://download.unity3d.com/download_unity/7a2fa5d8d101/TargetSupportInstaller/UnitySetup-Android-Support-for-Editor-2021.3.38f1.exe)
 
-![modules in build settings](https://github.com/basheer421/MOI/assets/138756079/cbe144ca-d0e2-4b51-b4d7-142a157c023f)
 
-
-
-```bash
-# If you are going to emulate with android, Be sure to have an Android device
-# as a simulatour inside the Unity
-
-# If you are going to emulate with ios, Be sure to have an ios device
-# as a simulatour inside the Unity
-```
 **[Documentation](https://docs.unity3d.com/hub/manual/InstallHub.html)**
 
 
