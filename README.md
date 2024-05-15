@@ -81,17 +81,26 @@ Technologies that We used to develop this 3D Edition mobile App:
 ### Requirements
 
 - Have this application's [API](https://github/eliasgcf/readme-template) running
+- [Creat an account in Unity](https://id.unity.com/en/conversations/9523141d-e73f-499c-9697-7b38ef085baa00ff)
+- Have this software [Unity HUB](https://unity.com/download) installed
 - Have this software [Unity 2021.3.38](https://unity.com/releases/editor/whats-new/2021.3.38) installed
+  
+## **Follow the steps below**
+
+**Open Unity HUB Software.**
+   
+![install_unity](https://github.com/HishamEltayb/MiniShell/assets/138756079/745b3b58-de48-4eb7-a089-17ec3b2d5623)
 
 **Clone the project and access the folder**
 
 ```bash
 $ git clone https://github.com/basheer421/MOI.git
 ```
+**Install ios package**
 
-**Follow the steps below**
+**In the Unity HUB ADD the project folder**
 
-**[Install the Unity Hub](https://docs.unity3d.com/hub/manual/InstallHub.html)**
+
 
 ```bash
 # If you are going to emulate with android, Be sure to have an Android device
@@ -100,6 +109,9 @@ $ git clone https://github.com/basheer421/MOI.git
 # If you are going to emulate with ios, Be sure to have an ios device
 # as a simulatour inside the Unity
 ```
+**[Documentation](https://docs.unity3d.com/hub/manual/InstallHub.html)**
+
+
 
 ## 🤔 How to contribute
 
@@ -130,9 +142,6 @@ $ git push origin my-feature
 
 After your pull request is merged, you can delete your branch
 
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 
 ---
