@@ -5,7 +5,7 @@
 <p align="center">Gamify The Real World 🎮</p>
 
 <p align="center">
-  <img alt="MOI Logo" src="https://github.com/basheer421/MOI/assets/138756079/c1ef9c56-cc4a-46f6-ad63-a42213fdc85a">
+  <img alt="MOI ScreenShots" src="https://github-production-user-asset-6210df.s3.amazonaws.com/138756079/330846551-7e5d8dca-1a42-4ed5-8dd1-49f19d831224.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240515%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240515T182242Z&X-Amz-Expires=300&X-Amz-Signature=873feaf04c58645e32184b70fdd060e4d0143334f7cf2a89ddceddeb068be4e3&X-Amz-SignedHeaders=host&actor_id=62940425&key_id=0&repo_id=798464983">
 </p>
 
 <div align="center">
@@ -98,13 +98,32 @@ Technologies used in the development of this project:
 1. **Make a fork of this repository**
 
     ```bash
+    # Fork using GitHub official command line
+    # If you don't have the GitHub CLI, use the web site to do that.
+    
     $ gh repo fork basheer421/MOI
     ```
 
 2. **Follow the steps below**
 
     ```bash
+    # Clone your fork
     $ git clone your-fork-url && cd MOI
+
+    # Create a branch with your feature
     $ git checkout -b my-feature
+
+    # Make the commit with your changes
     $ git commit -m 'feat: My new feature'
-    $
+
+    # Send the code to your remote branch
+    $ git push origin my-feature
+    ```
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+
+---
+
