@@ -6,6 +6,8 @@ using TMPro;
 
 public class UI_Manager : MonoBehaviour
 {
+	[Header("user controller")]
+	public user_controller u_ctr;
 	public List<user_info> info;
 	public int user;
 	[Header("car manager")]
@@ -370,6 +372,9 @@ public class UI_Manager : MonoBehaviour
 			Debug.Log("show ok popup");
 			ColorChangeCanvas.transform.GetChild(1).gameObject.SetActive(false);
 			ColorChangeCanvas.transform.GetChild(2).gameObject.SetActive(true);
+			//add score for user
+			u_ctr.add_score(info[user], 300);
+			//Debug.Log("the user score now is: " + info[user].score);
 		}
 		//back_to_traffic();
 	}
