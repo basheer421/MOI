@@ -47,14 +47,11 @@
 - <p style="color: red;">Specific User Challenges: Additionally, there is a segment of users, particularly people of determination, who face even more significant challenges. The standard interaction modes do not cater effectively to their needs, making it imperative to tailor solutions that enhance their accessibility and ease of use.</p>
 
 ### 💡 Solution:
-- <p style="color: red;">Gamification and Immersive Experience
-Our project introduces a novel solution that transforms traditional citizen-government interactions into a more engaging and motivating experience. By integrating gamification and immersive 3D environments, we not only make these interactions more user-friendly but also more compelling. Technologies such as Unity 3D and C# power these immersive environments, while gamification mechanics incentivize users through a reward system. Successful completion of services on our platform rewards users with vouchers redeemable in various domains like shopping, food, and discounts, fostering a sense of achievement and encouraging continued engagement.
+- <p style="color: red;">Gamification and Immersive Experience: Our project introduces a novel solution that transforms traditional citizen-government interactions into a more engaging and motivating experience. By integrating gamification and immersive 3D environments, we not only make these interactions more user-friendly but also more compelling. Technologies such as Unity 3D and C# power these immersive environments, while gamification mechanics incentivize users through a reward system. Successful completion of services on our platform rewards users with vouchers redeemable in various domains like shopping, food, and discounts, fostering a sense of achievement and encouraging continued engagement.</p>
 
-Enhanced Accessibility
-Recognizing the unique challenges faced by people of determination, our solution includes a speech-to-text feature that empowers these users to navigate services more effectively. Through voice commands, users can interact with AI-powered chatbots or receive guidance from call center personnel, thereby enhancing their autonomy and ease of access to necessary services.
+- <p style="color: red;">Enhanced Accessibility: Recognizing the unique challenges faced by people of determination, our solution includes a speech-to-text feature that empowers these users to navigate services more effectively. Through voice commands, users can interact with AI-powered chatbots or receive guidance from call center personnel, thereby enhancing their autonomy and ease of access to necessary services.</p>
 
-Continuous Improvement and Community Engagement
-To ensure the platform remains cutting-edge and user-centric, we encourage feedback and contributions from all users. Our Unity 3D demo is open for exploration to gather user insights, which are instrumental in ongoing refinement processes. We provide a clear and easy-to-follow contribution guide for community members who wish to contribute to the enhancement of this platform.</p>
+- <p style="color: red;">Continuous Improvement and Community Engagement: To ensure the platform remains cutting-edge and user-centric, we encourage feedback and contributions from all users. Our Unity 3D demo is open for exploration to gather user insights, which are instrumental in ongoing refinement processes. We provide a clear and easy-to-follow contribution guide for community members who wish to contribute to the enhancement of this platform.</p>
 
 
 ## 🚀 Technologies
