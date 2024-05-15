@@ -7,7 +7,7 @@
 
 <h1 align="center">
 
-![logo-removebg](https://github.com/basheer421/MOI/assets/138756079/c1ef9c56-cc4a-46f6-ad63-a42213fdc85a)
+![lastimage](https://github.com/basheer421/MOI/assets/138756079/b77941a4-c259-45f4-99ae-afd24141f075)
 
 
 </h1>
