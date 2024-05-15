@@ -1,7 +1,6 @@
 <h1 align="center">
 
-
-![MOI](https://github.com/basheer421/MOI/assets/138756079/c3ee3e7e-a29e-4c17-9bfd-0333d3f87f3a)
+![Screenshot 2024-05-15 144021](https://github.com/basheer421/MOI/assets/138756079/e0181f60-38fb-4eb5-a193-56635e0abd4d)
 
 
 </h1>
