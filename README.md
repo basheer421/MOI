@@ -119,7 +119,7 @@ $ git clone https://github.com/basheer421/MOI.git
 ```bash
 # Open the build setting inside the Unity Editor.
 # You will see the Android & IOS modules.
-# if they are not highlited then a button of **download** will appear after you press on one of them.
+# if they are not highlited then a button of "Open Download Page" will appear after you press on one of them.
 ```
 
 
