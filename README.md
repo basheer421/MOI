@@ -14,13 +14,6 @@
 <p align="center">
   
 
-   
-  
- 
-  
-
-    
-    
 
 <div align="center">
   <img alt="GitHub top language" src="https://img.shields.io/badge/Langauge-C%23-blue">
@@ -31,17 +24,6 @@
 </div>
 
   
-
-
-
-
-
-
-
-
-
-
-
 
 
 <p align="center">
@@ -136,7 +118,7 @@ $ git clone https://github.com/basheer421/MOI.git
 - [ANDROID MODULE](https://download.unity3d.com/download_unity/7a2fa5d8d101/TargetSupportInstaller/UnitySetup-Android-Support-for-Editor-2021.3.38f1.exe)
 
 
-**[Documentation](https://docs.unity3d.com/hub/manual/InstallHub.html)**
+**[Unity installation Documentation](https://docs.unity3d.com/hub/manual/InstallHub.html)**
 
 ---
 
