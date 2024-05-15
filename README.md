@@ -96,10 +96,15 @@ Technologies that We used to develop this 3D Edition mobile App:
 ```bash
 $ git clone https://github.com/basheer421/MOI.git
 ```
-**Install ios package**
 
 **In the Unity HUB ADD the project folder**
+
 ![opening_the_project](https://github.com/basheer421/MOI/assets/138756079/a02c9588-d476-4219-a216-c8a91cf67c4a)
+
+**If IOS AND ANDROID modules:**
+- [IOS MODULE](https://download.unity3d.com/download_unity/7a2fa5d8d101/TargetSupportInstaller/UnitySetup-iOS-Support-for-Editor-2021.3.38f1.exe)
+- [ANDROID MODULE](https://download.unity3d.com/download_unity/7a2fa5d8d101/TargetSupportInstaller/UnitySetup-Android-Support-for-Editor-2021.3.38f1.exe)
+
 
 
 
