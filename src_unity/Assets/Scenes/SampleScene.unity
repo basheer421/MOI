@@ -3628,9 +3628,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1142570653}
-        m_TargetAssemblyTypeName: VoiceManager, Assembly-CSharp
-        m_MethodName: Start
+      - m_Target: {fileID: 824374426}
+        m_TargetAssemblyTypeName: UI_Manager, Assembly-CSharp
+        m_MethodName: Voice_take_order
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4719,6 +4719,7 @@ MonoBehaviour:
   TrafficServicesCanvas: {fileID: 850176388}
   NavBar: {fileID: 1342226546}
   PopupCanvas: {fileID: 1308598247}
+  voiceManager: {fileID: 1142570653}
 --- !u!4 &824374427
 Transform:
   m_ObjectHideFlags: 0
@@ -6599,7 +6600,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7da2eadd90a932721abf35ce416c5f92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uiText: {fileID: 1428263965}
 --- !u!4 &1142570654
 Transform:
   m_ObjectHideFlags: 0
@@ -8456,7 +8456,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98436c2ede2113c4ca89fedee9149640, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isShowPopupAndroid: 0
+  isShowPopupAndroid: 1
 --- !u!4 &1429829088
 Transform:
   m_ObjectHideFlags: 0

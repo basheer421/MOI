@@ -7,8 +7,9 @@ using TMPro;
 
 public class VoiceManager : MonoBehaviour
 {
+    private bool isListening;
     private const string LANG_CODE = "en-US";
-    public TextMeshProUGUI uiText;
+    private string message;
 
     #region text to speech
     public void StartSpeaking(string message)
@@ -46,14 +47,13 @@ public class VoiceManager : MonoBehaviour
 
     public void OnFinalResult(string _data)
     {
-        uiText.text = _data;
-        Debug.Log(_data);
+        message = _data;
+        isListening = false;
     }
 
     public void OnPartialResult(string _data)
     {
-        uiText.text = _data;
-        Debug.Log(_data);
+        message = _data;
     }
 
     #endregion
@@ -61,14 +61,30 @@ public class VoiceManager : MonoBehaviour
     public void Start()
     {
         Setup(LANG_CODE);
+    }
+
+    public void Ask()
+    {
         StartSpeaking("Hello, how can I help you?");
         StartListening();
+        isListening = true;
     }
 
     public void Stop()
     {
         StopSpeaking();
         StopListening();
+        isListening = false;
+    }
+
+    public bool IsListening()
+    {
+        return isListening;
+    }
+
+    public string GetMessage()
+    {
+        return message;
     }
 
     public void Setup(string code)
@@ -80,11 +96,7 @@ public class VoiceManager : MonoBehaviour
         SpeechToText.Instance.onPartialResultsCallback = OnPartialResult;
 #endif
         TextToSpeech.Instance.onStartCallBack = OnSpeakStart;
-        TextToSpeech.Instance.onDoneCallback = (() =>
-        {
-            Stop();
-            OnSpeakStop();
-        });
+        TextToSpeech.Instance.onDoneCallback = Stop;
         CheckPermission();
     }
 

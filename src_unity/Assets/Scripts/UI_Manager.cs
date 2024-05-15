@@ -23,8 +23,8 @@ public class UI_Manager : MonoBehaviour
 	public GameObject SocialCanvas;
 	public GameObject TrafficServicesCanvas;
 	public GameObject NavBar;
-
 	public GameObject PopupCanvas;
+	public VoiceManager voiceManager;
 	private int imageIndex = 0;
 	int license_idx = 0;
 	int registration_idx = 0;
@@ -116,6 +116,8 @@ public class UI_Manager : MonoBehaviour
 
 	public void Social_next_image()
 	{
+		if (SocialCanvas.GetComponent<Canvas>().enabled == false)
+			return;
 		imageIndex = imageIndex == 0 ? 1 : 0; // Change if more images are added
 
 		string imageName = "post#" + imageIndex;
@@ -125,6 +127,8 @@ public class UI_Manager : MonoBehaviour
 
 	public void Social_previous_image()
 	{
+		if (SocialCanvas.GetComponent<Canvas>().enabled == false)
+			return;
 		imageIndex = imageIndex == 0 ? 1 : 0; // Change if more images are added
 
 		string imageName = "post#" + imageIndex;
@@ -154,7 +158,8 @@ public class UI_Manager : MonoBehaviour
 		camera.StartCoroutine("into_garage");
 		//camera.traffic_service_view();
 		yield return new WaitForSeconds(2.7f);
-		TrafficServicesCanvas.GetComponent<Canvas>().enabled = true;
+		if (PopupCanvas.GetComponent<Canvas>().enabled == false)
+			TrafficServicesCanvas.GetComponent<Canvas>().enabled = true;
 		NavBar.GetComponent<Canvas>().enabled = true;
 	}
 
@@ -168,11 +173,6 @@ public class UI_Manager : MonoBehaviour
 		camera.StartCoroutine("outof_garage");
 		yield return new WaitForSeconds(2.7f);
 		ServicesCanvas.GetComponent<Canvas>().enabled = true;
-	}
-
-	public void vehicle_services()
-	{
-		//camera switch
 	}
 
 	void render_main_view()
@@ -236,6 +236,91 @@ public class UI_Manager : MonoBehaviour
 		PopupCanvas.GetComponent<Canvas>().enabled = false;
 	}
 
+	private void handleMessage(string message)
+	{
+		message = message.ToLower();
+		if (message.Contains("home"))
+		{
+			navigate_home();
+		}
+		else if (message.Contains("profile"))
+		{
+			navigate_profile();
+		}
+		else if (message == "services")
+		{
+			navigate_services();
+		}
+		else if (message.Contains("social"))
+		{
+			navigate_social();
+		}
+		else if (message.Contains("sign out"))
+		{
+			sign_out();
+		}
+		else if (message.Contains("next"))
+		{
+			Social_next_image();
+		}
+		else if (message.Contains("previous"))
+		{
+			Social_previous_image();
+		}
+		else if (message.Contains("open post"))
+		{
+			Social_open_post();
+		}
+		else if (message.Contains("traffic services"))
+		{
+			traffic_services_start();
+		}
+		else if (message.Contains("back"))
+		{
+			from_traffic_to_all_services();
+		}
+		else if (message.Contains("license"))
+		{
+			flip_license();
+		}
+		else if (message.Contains("registration"))
+		{
+			flip_registration();
+		}
+		else if (message.Contains("flip"))
+		{
+			flip_license();
+			flip_registration();
+		}
+		else if (message.Contains("digital cards"))
+		{
+			open_digital_cards();
+		}
+		else if (message.Contains("personal info"))
+		{
+			back_to_personal_info();
+		}
+		else if (message.Contains("traffic fines"))
+		{
+			traffic_services_start();
+			Traffic_open_popup();
+		}
+		else if (message.Contains("close popup"))
+		{
+			Traffic_close_popup();
+		}
+	}
 
+	public void Voice_take_order()
+	{
+		voiceManager.Ask();
+		StartCoroutine("Voice_take_order_IE");
+	}
 
+	IEnumerator Voice_take_order_IE()
+	{
+		while (voiceManager.IsListening())
+			yield return new WaitForSeconds(0.5f);
+		handleMessage(voiceManager.GetMessage());
+	}
 }
