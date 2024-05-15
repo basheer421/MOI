@@ -7,7 +7,7 @@
 
 <h1 align="center">
 
-![lastimage](https://github.com/basheer421/MOI/assets/138756079/b77941a4-c259-45f4-99ae-afd24141f075)
+![what_processed](https://github.com/basheer421/MOI/assets/138756079/01971f48-0c87-42bf-8994-387688ac3e00)
 
 
 </h1>
