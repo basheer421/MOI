@@ -1,6 +1,6 @@
 <h1 align="center">
 
-![Screenshot 2024-05-15 144021](https://github.com/basheer421/MOI/assets/138756079/e0181f60-38fb-4eb5-a193-56635e0abd4d)
+<img width="1094" alt="logo" src="https://github.com/basheer421/MOI/assets/138756079/b817cb1a-9604-4ba5-819f-de9b72541091">
 
 
 </h1>
