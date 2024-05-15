@@ -79,6 +79,11 @@ public class UI_Manager : MonoBehaviour
 		render_main_view();
 		all_false();
 		HomeCanvas.GetComponent<Canvas>().enabled = true;
+		HomeCanvas.transform.Find("uid1").GetComponent<TextMeshProUGUI>().text = info[user].uid;
+		HomeCanvas.transform.Find("profile_image").GetComponent<Image>().sprite = info[user].propic;
+		HomeCanvas.transform.Find("user_name").GetComponent<TextMeshProUGUI>().text = info[user].user_name;
+		HomeCanvas.transform.Find("Points").GetComponent<TextMeshProUGUI>().text = info[user].score.ToString();
+		HomeCanvas.transform.Find("Fines").GetComponent<TextMeshProUGUI>().text = user == 0 ? "0" : "500";
 	}
 
 	public void navigate_profile()
@@ -238,6 +243,16 @@ public class UI_Manager : MonoBehaviour
 	{
 		TrafficServicesCanvas.GetComponent<Canvas>().enabled = false;
 		PopupCanvas.GetComponent<Canvas>().enabled = true;
+		if (user == 0)
+		{
+			PopupCanvas.transform.Find("finebox").gameObject.SetActive(true);
+			PopupCanvas.transform.Find("nofinebox").gameObject.SetActive(false);
+		}
+		else
+		{
+			PopupCanvas.transform.Find("finebox").gameObject.SetActive(false);
+			PopupCanvas.transform.Find("nofinebox").gameObject.SetActive(true);
+		}
 	}
 
 	public void Traffic_close_popup()
@@ -346,7 +361,7 @@ public class UI_Manager : MonoBehaviour
 	{
 		car_mgr.to_black(user);
 	}
-	public void	change_to_grey()
+	public void change_to_grey()
 	{
 		car_mgr.to_grey(user);
 	}
@@ -358,7 +373,7 @@ public class UI_Manager : MonoBehaviour
 	{
 		car_mgr.to_red(user);
 	}
-	public void	on_submit()
+	public void on_submit()
 	{
 		if (user == 0)
 		{
@@ -388,4 +403,20 @@ public class UI_Manager : MonoBehaviour
 		TrafficServicesCanvas.GetComponent<Canvas>().enabled = true;
 	}
 	#endregion
+
+	public void Home_pay_fines()
+	{
+		traffic_services_start();
+		Traffic_open_popup();
+	}
+
+	public void Start()
+	{
+		HomeCanvas.transform.Find("uid1").GetComponent<TextMeshProUGUI>().text = info[user].uid;
+		HomeCanvas.transform.Find("profile_image").GetComponent<Image>().sprite = info[user].propic;
+		HomeCanvas.transform.Find("user_name").GetComponent<TextMeshProUGUI>().text = info[user].user_name;
+		HomeCanvas.transform.Find("Points").GetComponent<TextMeshProUGUI>().text = info[user].score.ToString();
+		HomeCanvas.transform.Find("Fines").GetComponent<TextMeshProUGUI>().text = user == 0 ? "0" : "500";
+
+	}
 }
