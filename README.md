@@ -1,7 +1,7 @@
 <h1 align="center">
 
-<img width="1094" alt="logo" src="https://github.com/basheer421/MOI/assets/138756079/b817cb1a-9604-4ba5-819f-de9b72541091">
 
+![logo-removebg-preview](https://github.com/basheer421/MOI/assets/138756079/714f2960-4d1e-4efa-8ca9-c8700bd353a5)
 
 </h1>
 
