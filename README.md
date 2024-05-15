@@ -61,7 +61,6 @@ Technologies that We used to develop this 3D Edition mobile App:
 
 ### Requirements
 
-- Have this application's [API](https://github/eliasgcf/readme-template) running
 - [Creat an account in Unity](https://id.unity.com/en/conversations/9523141d-e73f-499c-9697-7b38ef085baa00ff)
 - Have this software [Unity HUB](https://unity.com/download) installed
 - Have this software [Unity 2021.3.38](https://unity.com/releases/editor/whats-new/2021.3.38) installed
