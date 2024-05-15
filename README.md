@@ -1,15 +1,16 @@
+<h2 align="center">
+   MOI 3D Mobile App
+</h2>
+
+<p align="center">Gamify The Real World🎮</p>
+
+
 <h1 align="center">
 
 ![logo-removebg](https://github.com/basheer421/MOI/assets/138756079/c1ef9c56-cc4a-46f6-ad63-a42213fdc85a)
 
 
 </h1>
-
-<h2 align="center">
-   MOI 3D Mobile App
-</h2>
-
-<p align="center">🔷Gamify The Real World🔷</p>
 
 <p align="center">
   
