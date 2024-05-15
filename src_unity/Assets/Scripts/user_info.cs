@@ -15,5 +15,4 @@ public class user_info : ScriptableObject
 	public  string    phone_no;
 	public  string    traffic_no;
 	public  int   score;
-	public  List<string>  cars;
 }

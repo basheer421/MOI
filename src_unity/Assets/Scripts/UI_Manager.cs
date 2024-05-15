@@ -8,12 +8,15 @@ public class UI_Manager : MonoBehaviour
 {
 	public List<user_info> info;
 	public int user;
+	[Header("car manager")]
+	public Car_Mngr car_mgr;
 
 	[Header("Images")]
 	public List<Sprite> license;
 	public List<Sprite> registration;
 	[Header("Camera Manager")]
 	public camera_manager camera;
+
 	[Header("Canvases")]
 	public GameObject SignInCanvas;
 	public GameObject FakeLoadScreen;
@@ -24,6 +27,9 @@ public class UI_Manager : MonoBehaviour
 	public GameObject TrafficServicesCanvas;
 	public GameObject NavBar;
 	public GameObject PopupCanvas;
+	public GameObject ColorChangeCanvas;
+
+	[Header("Voice Manager")]
 	public VoiceManager voiceManager;
 	private int imageIndex = 0;
 	int license_idx = 0;
@@ -39,6 +45,7 @@ public class UI_Manager : MonoBehaviour
 		user = rand;
 		Debug.Log("the user selected is " + info[user]);
 		StartCoroutine("SignInIEnum");
+		car_mgr.enable_car(user);
 	}
 
 	IEnumerator SignInIEnum()
@@ -323,4 +330,39 @@ public class UI_Manager : MonoBehaviour
 			yield return new WaitForSeconds(0.5f);
 		handleMessage(voiceManager.GetMessage());
 	}
+
+
+	#region Color Change
+	public void change_to_black()
+	{
+		car_mgr.to_black(user);
+	}
+	public void	change_to_grey()
+	{
+		car_mgr.to_grey(user);
+	}
+	public void change_to_white()
+	{
+		car_mgr.to_white(user);
+	}
+	public void change_to_red()
+	{
+		car_mgr.to_red(user);
+	}
+	public void	on_submit()
+	{
+		if (user == 0)
+		{
+			ColorChangeCanvas.transform.GetChild(1).gameObject.SetActive(true);
+			ColorChangeCanvas.transform.GetChild(2).gameObject.SetActive(false);
+		}
+		else
+		{
+			ColorChangeCanvas.transform.GetChild(1).gameObject.SetActive(false);
+			ColorChangeCanvas.transform.GetChild(2).gameObject.SetActive(true);
+		}
+	}
+	
+
+	#endregion
 }
