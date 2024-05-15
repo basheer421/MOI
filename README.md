@@ -1,7 +1,7 @@
 <h1 align="center">
 
 
-![MOI](https://github.com/HishamEltayb/MiniShell/assets/138756079/226cd6c6-f4fe-4903-9058-49342c7e483e)
+![MOI](https://github.com/basheer421/MOI/assets/138756079/c3ee3e7e-a29e-4c17-9bfd-0333d3f87f3a)
 
 
 </h1>
@@ -89,7 +89,7 @@ Technologies that We used to develop this 3D Edition mobile App:
 
 **Open Unity HUB Software.**
    
-![install_unity](https://github.com/HishamEltayb/MiniShell/assets/138756079/745b3b58-de48-4eb7-a089-17ec3b2d5623)
+(![install_unity](https://github.com/basheer421/MOI/assets/138756079/296dd41d-ae55-432f-a56d-4c0f43f765ae)
 
 **Clone the project and access the folder**
 
