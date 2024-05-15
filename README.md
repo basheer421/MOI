@@ -7,7 +7,7 @@
 </h1>
 
 <h2 align="center">
-   MOI 3D Edition Mobile App
+   MOI 3D Mobile App
 </h2>
 
 <p align="center">🔷Gamify The Real World🔷</p>
