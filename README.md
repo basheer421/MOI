@@ -128,7 +128,7 @@ $ git clone https://github.com/basheer421/MOI.git
 **[Unity installation Documentation](https://docs.unity3d.com/hub/manual/InstallHub.html)**
 
 
-# 📱 Final Output:
+# 📱 Run Project:
 
 ![final](https://github.com/basheer421/MOI/assets/138756079/37c60e51-2102-4280-bd16-5c2d5baccac8)
 
