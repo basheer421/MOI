@@ -99,6 +99,7 @@ $ git clone https://github.com/basheer421/MOI.git
 **Install ios package**
 
 **In the Unity HUB ADD the project folder**
+![opening_the_project](https://github.com/basheer421/MOI/assets/138756079/a02c9588-d476-4219-a216-c8a91cf67c4a)
 
 
 
