@@ -130,7 +130,7 @@ $ git clone https://github.com/basheer421/MOI.git
 
 # 📱 Final Output:
 
-![Rec](https://github.com/basheer421/MOI/assets/138756079/aa4aae11-f98e-4314-a953-780e967ec2aa)
+![final](https://github.com/basheer421/MOI/assets/138756079/37c60e51-2102-4280-bd16-5c2d5baccac8)
 
 
 ---
