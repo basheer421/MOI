@@ -7,7 +7,7 @@
 
 <h1 align="center">
 
-![hahahah](https://github.com/basheer421/MOI/assets/138756079/d4a46b2d-ad0f-49fd-a8d8-0113f8e8455d)
+![what-removebg](https://github.com/basheer421/MOI/assets/138756079/7e5d8dca-1a42-4ed5-8dd1-49f19d831224)
 
 
 </h1>
