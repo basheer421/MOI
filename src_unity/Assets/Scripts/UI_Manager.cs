@@ -203,15 +203,15 @@ public class UI_Manager : MonoBehaviour
 		if (license_idx == 0)
 		{
 			license_idx++;
-			ProfileCanvas.transform.GetChild(15).transform.GetChild(0).GetComponent<Image>().sprite = license[license_idx];
-			ProfileCanvas.transform.GetChild(15).transform.GetChild(0).transform.GetChild(0).GetComponent<Image>().enabled = false;
+			ProfileCanvas.transform.GetChild(16).transform.GetChild(0).GetComponent<Image>().sprite = license[license_idx];
+			ProfileCanvas.transform.GetChild(16).transform.GetChild(0).transform.GetChild(0).GetComponent<Image>().enabled = false;
 		}
 		else
 		{
 			license_idx--;
-			ProfileCanvas.transform.GetChild(15).transform.GetChild(0).GetComponent<Image>().sprite = license[license_idx];
-			ProfileCanvas.transform.GetChild(15).transform.GetChild(0).transform.GetChild(0).GetComponent<Image>().enabled = true;
-			ProfileCanvas.transform.GetChild(15).transform.GetChild(0).transform.GetChild(0).GetComponent<Image>().sprite = info[user].propic;
+			ProfileCanvas.transform.GetChild(16).transform.GetChild(0).GetComponent<Image>().sprite = license[license_idx];
+			ProfileCanvas.transform.GetChild(16).transform.GetChild(0).transform.GetChild(0).GetComponent<Image>().enabled = true;
+			ProfileCanvas.transform.GetChild(16).transform.GetChild(0).transform.GetChild(0).GetComponent<Image>().sprite = info[user].propic;
 		}
 	}
 
@@ -220,22 +220,22 @@ public class UI_Manager : MonoBehaviour
 		if (registration_idx == 0)
 		{
 			registration_idx++;
-			ProfileCanvas.transform.GetChild(15).transform.GetChild(1).GetComponent<Image>().sprite = registration[registration_idx];
+			ProfileCanvas.transform.GetChild(16).transform.GetChild(1).GetComponent<Image>().sprite = registration[registration_idx];
 		}
 		else
 		{
 			registration_idx--;
-			ProfileCanvas.transform.GetChild(15).transform.GetChild(1).GetComponent<Image>().sprite = registration[registration_idx];
+			ProfileCanvas.transform.GetChild(16).transform.GetChild(1).GetComponent<Image>().sprite = registration[registration_idx];
 		}
 	}
 	public void open_digital_cards()
 	{
-		ProfileCanvas.transform.GetChild(15).gameObject.SetActive(true);
+		ProfileCanvas.transform.GetChild(16).gameObject.SetActive(true);
 		NavBar.GetComponent<Canvas>().enabled = false;
 	}
 	public void back_to_personal_info()
 	{
-		ProfileCanvas.transform.GetChild(15).gameObject.SetActive(false);
+		ProfileCanvas.transform.GetChild(16).gameObject.SetActive(false);
 		NavBar.GetComponent<Canvas>().enabled = true;
 	}
 
