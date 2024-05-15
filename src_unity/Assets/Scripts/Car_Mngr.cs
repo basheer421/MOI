@@ -6,7 +6,15 @@ public class Car_Mngr : MonoBehaviour
 {
     public List<Material> car_matt;
     public List<GameObject> car;
-
+    Color base_color;
+    public void set_original_color(int user)
+    {
+        base_color = car_matt[user].color;
+    }
+    public void reset_color(int user)
+    {
+        car_matt[user].SetColor("_Color", base_color);
+    }
     public  void enable_car(int user)
     {
         for(int i = 0; i < 2; i++)

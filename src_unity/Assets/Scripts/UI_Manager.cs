@@ -46,6 +46,7 @@ public class UI_Manager : MonoBehaviour
 		Debug.Log("the user selected is " + info[user]);
 		StartCoroutine("SignInIEnum");
 		car_mgr.enable_car(user);
+		car_mgr.set_original_color(user);
 	}
 
 	IEnumerator SignInIEnum()
@@ -333,6 +334,12 @@ public class UI_Manager : MonoBehaviour
 
 
 	#region Color Change
+	public void open_change_color()
+	{
+		all_false();
+		NavBar.GetComponent<Canvas>().enabled = false;
+		ColorChangeCanvas.GetComponent<Canvas>().enabled = true;
+	}
 	public void change_to_black()
 	{
 		car_mgr.to_black(user);
@@ -353,16 +360,27 @@ public class UI_Manager : MonoBehaviour
 	{
 		if (user == 0)
 		{
+			Debug.Log("show inspect popup");
+			car_mgr.reset_color(user);
 			ColorChangeCanvas.transform.GetChild(1).gameObject.SetActive(true);
 			ColorChangeCanvas.transform.GetChild(2).gameObject.SetActive(false);
 		}
 		else
 		{
+			Debug.Log("show ok popup");
 			ColorChangeCanvas.transform.GetChild(1).gameObject.SetActive(false);
 			ColorChangeCanvas.transform.GetChild(2).gameObject.SetActive(true);
 		}
+		//back_to_traffic();
 	}
-	
 
+	public void back_to_traffic()
+	{
+		ColorChangeCanvas.transform.GetChild(1).gameObject.SetActive(false);
+		ColorChangeCanvas.transform.GetChild(2).gameObject.SetActive(false);
+		ColorChangeCanvas.GetComponent<Canvas>().enabled = false;
+		NavBar.GetComponent<Canvas>().enabled = true;
+		TrafficServicesCanvas.GetComponent<Canvas>().enabled = true;
+	}
 	#endregion
 }
