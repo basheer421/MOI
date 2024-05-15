@@ -83,7 +83,7 @@ public class UI_Manager : MonoBehaviour
 		HomeCanvas.transform.Find("profile_image").GetComponent<Image>().sprite = info[user].propic;
 		HomeCanvas.transform.Find("user_name").GetComponent<TextMeshProUGUI>().text = info[user].user_name;
 		HomeCanvas.transform.Find("Points").GetComponent<TextMeshProUGUI>().text = info[user].score.ToString();
-		HomeCanvas.transform.Find("Fines").GetComponent<TextMeshProUGUI>().text = user == 0 ? "0" : "500";
+		HomeCanvas.transform.Find("Fines").GetComponent<TextMeshProUGUI>().text = user == 0 ? "500" : "0";
 	}
 
 	public void navigate_profile()
