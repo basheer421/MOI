@@ -106,11 +106,11 @@ Technologies that We used to develop this 3D Edition mobile App:
 
 ## Trade-offs and Additional Considerations
 
-### Speech Recognition Accuracy vs. Performance
-Balancing speech-to-text (STT) accuracy with app performance is crucial, especially on devices with limited processing power. Developers must optimize both aspects to ensure a smooth user experience.
-
 ### Gamification Complexity vs. User Engagement
 Designing gamification elements, like point systems, requires a delicate balance between engaging users and avoiding complexity overload. Prioritizing intuitive design encourages sustained user interaction.
+
+### Speech Recognition Accuracy vs. Performance
+Balancing speech-to-text (STT) accuracy with app performance is crucial, especially on devices with limited processing power. Developers must optimize both aspects to ensure a smooth user experience.
 
 ### What Could Have Been Added
 
