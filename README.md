@@ -42,9 +42,13 @@
 
 
 ### 🔍 Problem:
-- <p style="color: red;">General Challenges: Citizen-government interactions are critical yet often fraught with challenges such as complexity and inaccessibility. These barriers can lead to significant frustration and disengagement among citizens. Often, users are either compelled to rely on call centers or abandon their tasks midway due to these hurdles. This lack of efficient interaction mechanisms can diminish the quality of civic engagement and hinder effective service delivery.</p>
+<p style="color: red;">
+1. Despite being well-designed, the current government mobile app faces usability challenges.
+2. Users, including diverse groups such as the young, elderly, and people of determination, find the app slightly complicated to navigate.
+3. The app's complexity results in a lack of motivation among users to utilize its services fully.
+4. Accessibility features for people of determination are limited, hindering their ability to benefit from the app's offerings.
+5. There is a pressing need to address these usability issues and enhance accessibility to ensure the app effectively serves all demographics and maximizes its societal impact.</p>
 
-- <p style="color: red;">Specific User Challenges: Additionally, there is a segment of users, particularly people of determination, who face even more significant challenges. The standard interaction modes do not cater effectively to their needs, making it imperative to tailor solutions that enhance their accessibility and ease of use.</p>
 
 ### 💡 Solution:
 - <p style="color: red;">Gamification and Immersive Experience: Our project introduces a novel solution that transforms traditional citizen-government interactions into a more engaging and motivating experience. By integrating gamification and immersive 3D environments, we not only make these interactions more user-friendly but also more compelling. Technologies such as Unity 3D and C# power these immersive environments, while gamification mechanics incentivize users through a reward system. Successful completion of services on our platform rewards users with vouchers redeemable in various domains like shopping, food, and discounts, fostering a sense of achievement and encouraging continued engagement.</p>
