@@ -96,18 +96,6 @@ Technologies that We used to develop MOI App:
 - [Interactive 3D Elements](https://threejs.org/)
 
 
-
-## Trade-offs and Additional Considerations
-
-### Speech Recognition Accuracy vs. Performance
-Balancing speech-to-text (STT) accuracy with app performance is crucial, especially on devices with limited processing power. Developers must optimize both aspects to ensure a smooth user experience.
-
-### Localization Support
-Incorporating localization features caters to users from various regions and language backgrounds. Multilingual support enhances user accessibility and improves overall user experience.
-
-### Offline Functionality
-Adding offline functionality improves usability in areas with limited internet access. It ensures uninterrupted usage and enhances accessibility for users in regions with unreliable connectivity.
-
 ## 💻 Getting started
 
 ### Requirements
@@ -177,6 +165,17 @@ $ git clone https://github.com/basheer421/MOI.git
 
 
 ---
+
+## Trade-offs and Additional Considerations
+
+### Speech Recognition Accuracy vs. Performance
+Balancing speech-to-text (STT) accuracy with app performance is crucial, especially on devices with limited processing power. Developers must optimize both aspects to ensure a smooth user experience.
+
+### Localization Support
+Incorporating localization features caters to users from various regions and language backgrounds. Multilingual support enhances user accessibility and improves overall user experience.
+
+### Offline Functionality
+Adding offline functionality improves usability in areas with limited internet access. It ensures uninterrupted usage and enhances accessibility for users in regions with unreliable connectivity.
 
 
 ## 🤔 How to contribute
