@@ -42,12 +42,12 @@
 
 
 ### 🔍 Problem:
-<p style="color: red;">
-1. Despite being well-designed, the current government mobile app faces usability challenges.
-2. Users, including diverse groups such as the young, elderly, and people of determination, find the app slightly complicated to navigate.
-3. The app's complexity results in a lack of motivation among users to utilize its services fully.
-4. Accessibility features for people of determination are limited, hindering their ability to benefit from the app's offerings.
-5. There is a pressing need to address these usability issues and enhance accessibility to ensure the app effectively serves all demographics and maximizes its societal impact.</p>
+
+<p style="color: red;">1. Despite being well-designed, the current government mobile app faces usability challenges.</p>
+<p style="color: red;">2. Users, including diverse groups such as the young, elderly, and people of determination, find the app slightly complicated to navigate.</p>
+<p style="color: red;">3. The app's complexity results in a lack of motivation among users to utilize its services fully.</p>
+<p style="color: red;">4. Accessibility features for people of determination are limited, hindering their ability to benefit from the app's offerings.</p>
+<p style="color: red;">5. There is a pressing need to address these usability issues and enhance accessibility to ensure the app effectively serves all demographics and maximizes its societal impact.</p>
 
 
 ### 💡 Solution:
