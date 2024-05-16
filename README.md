@@ -42,9 +42,11 @@ This project aims to redesign the MOI mobile app to enhance usability, accessibi
 ## Introduction
 - <p style="color: red;">Gamification can revolutionize the way citizens interact with government services. By infusing digital experiences with game, like elements, we aim to increase engagement, streamline service access, and foster a more positive relationship between the public and their government.</p>
 
+<h1 align="center">
+   
+![final (online-video-cutter com)](https://github.com/basheer421/MOI/assets/138756079/aed540a3-130e-4787-b3df-156c118fad0e)
 
-![VideoClip2024-05-1202_19_57-ezgif com-resize](https://github.com/basheer421/MOI/assets/138756079/62610451-5949-4775-a364-c321dd69dcc3)
-
+</h1>
 
 ### 🔍 Problems:
 
