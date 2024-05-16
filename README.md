@@ -36,7 +36,7 @@
 </p>
 
 ## 👨🏻‍💻 About the project
-This project aims to redesign the MOI mobile app to enhance usability, accessibility, and user engagement. By incorporating Unity integration for a 3D environment, enhanced text-to-speech (TTS) and speech-to-text (STT) interaction, a point system, virtualized app environment, and user feedback integration, the app seeks to provide a more immersive, intuitive, and rewarding experience for all users.
+This project aims to enhance the user experiance of MOI mobile app, accessibility, and user engagement. By incorporating Unity integration for a 3D environment, enhanced text-to-speech (TTS) and speech-to-text (STT) interaction, a point system, virtualized app environment, and user feedback integration, the app seeks to provide a more immersive, intuitive, and rewarding experience for all users.
 
 
 ## Introduction
