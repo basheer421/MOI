@@ -30,6 +30,7 @@ public class UI_Manager : MonoBehaviour
 	public GameObject NavBar;
 	public GameObject PopupCanvas;
 	public GameObject ColorChangeCanvas;
+	public GameObject StoreCanvas;
 
 	[Header("Voice Manager")]
 	public VoiceManager voiceManager;
@@ -72,6 +73,8 @@ public class UI_Manager : MonoBehaviour
 		SocialCanvas.GetComponent<Canvas>().enabled = false;
 		TrafficServicesCanvas.GetComponent<Canvas>().enabled = false;
 		PopupCanvas.GetComponent<Canvas>().enabled = false;
+		ColorChangeCanvas.GetComponent<Canvas>().enabled = false;
+		StoreCanvas.GetComponent<Canvas>().enabled = false;
 	}
 
 	public void navigate_home()
@@ -334,6 +337,10 @@ public class UI_Manager : MonoBehaviour
 		{
 			Traffic_close_popup();
 		}
+		else if (message.Contains("points"))
+		{
+			navigate_store();
+		}
 	}
 
 	public void Voice_take_order()
@@ -410,6 +417,12 @@ public class UI_Manager : MonoBehaviour
 		Traffic_open_popup();
 	}
 
+	public void navigate_store()
+	{
+		all_false();
+		StoreCanvas.GetComponent<Canvas>().enabled = true;
+		StoreCanvas.transform.Find("Points").GetComponent<TextMeshProUGUI>().text = info[user].score.ToString();
+	}
 	public void Start()
 	{
 		HomeCanvas.transform.Find("uid1").GetComponent<TextMeshProUGUI>().text = info[user].uid;
