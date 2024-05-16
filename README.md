@@ -114,9 +114,6 @@ Balancing speech-to-text (STT) accuracy with app performance is crucial, especia
 
 ### What Could Have Been Added
 
-#### Accessibility Testing
-Thorough accessibility testing ensures inclusivity for users with diverse needs. By testing features with different accessibility requirements, developers can address potential usability barriers.
-
 #### Localization Support
 Incorporating localization features caters to users from various regions and language backgrounds. Multilingual support enhances user accessibility and improves overall user experience.
 
