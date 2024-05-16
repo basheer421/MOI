@@ -63,8 +63,6 @@ This project aims to enhance the user experiance of MOI mobile app, accessibilit
 
 ### 💡 Solution:
 
-## Features
-
 ### Unity Integration for 3D Environment
 - Implement Unity to enhance the app's interface with a 3D environment.
 - Offer a more immersive and intuitive user experience for navigation.
