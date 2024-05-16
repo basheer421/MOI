@@ -70,30 +70,25 @@ This project aims to enhance the user experiance of MOI mobile app, accessibilit
 
 ### Enhanced TTS / STT Interaction
 - Upgrade the existing TTS feature to make it more interactive and user-friendly.
-- Enable TTS system to interact with users.
-- Implement STT feature for verbal commands or requests.
+- Enable TTS system to interact with users, through app functionalities.
+- Implement STT feature for all commands and requests.
 - Benefit users with speech impairments or limited dexterity.
 
 ### Gamification with Point System
 - Introduce a point system to gamify the user experience.
-- Users earn points for completing tasks or achieving milestones.
+- Users earn points for completing service.
 - Points can be redeemed for rewards, discounts, or exclusive benefits.
 - Encourage exploration and engagement with app features.
 
 ### Virtualized App Environment
 - Create a virtualized environment simulating real-world scenarios.
-- Users navigate through virtual representations of government offices or public spaces.
+- Users navigate through virtual representations of government offices.
 - Gamify the environment to motivate exploration and task completion.
-
-### User Feedback Integration
-- Incorporate mechanisms for collecting and analyzing user feedback.
-- Gather insights to identify pain points and areas for enhancement.
-- Regular updates based on user feedback to improve usability and effectiveness.
 
 
 ## 🚀 Technologies
 
-Technologies that We used to develop this 3D Edition mobile App:
+Technologies that We used to develop MOI App:
 
 - [Unity 3D](https://unity.com/)
 - [C#](https://docs.microsoft.com/en-us/dotnet/csharp/)
@@ -104,18 +99,13 @@ Technologies that We used to develop this 3D Edition mobile App:
 
 ## Trade-offs and Additional Considerations
 
-### Gamification Complexity vs. User Engagement
-Designing gamification elements, like point systems, requires a delicate balance between engaging users and avoiding complexity overload. Prioritizing intuitive design encourages sustained user interaction.
-
 ### Speech Recognition Accuracy vs. Performance
 Balancing speech-to-text (STT) accuracy with app performance is crucial, especially on devices with limited processing power. Developers must optimize both aspects to ensure a smooth user experience.
 
-### What Could Have Been Added
-
-#### Localization Support
+### Localization Support
 Incorporating localization features caters to users from various regions and language backgrounds. Multilingual support enhances user accessibility and improves overall user experience.
 
-#### Offline Functionality
+### Offline Functionality
 Adding offline functionality improves usability in areas with limited internet access. It ensures uninterrupted usage and enhances accessibility for users in regions with unreliable connectivity.
 
 ## 💻 Getting started
@@ -123,8 +113,8 @@ Adding offline functionality improves usability in areas with limited internet a
 ### Requirements
 
 - [Creat an account in Unity](https://id.unity.com/en/conversations/9523141d-e73f-499c-9697-7b38ef085baa00ff)
-- Have this software [Unity HUB](https://unity.com/download) installed
-- Have this software [Unity 2021.3.38](https://unity.com/releases/editor/whats-new/2021.3.38) installed
+- Have [Unity HUB](https://unity.com/download) installed
+- Have [Unity 2021.3.38](https://unity.com/releases/editor/whats-new/2021.3.38) installed
 
 
   
