@@ -41,7 +41,7 @@
 - <p style="color: red;">Gamification can revolutionize the way citizens interact with government services. By infusing digital experiences with game, like elements, we aim to increase engagement, streamline service access, and foster a more positive relationship between the public and their government.</p>
 
 
-### 🔍 Problem:
+### 🔍 Problems:
 
 - <p style="color: red;">Despite being well-designed, the current government mobile app faces usability challenges.</p>
 
