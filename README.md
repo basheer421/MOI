@@ -178,6 +178,7 @@ Incorporating localization features caters to users from various regions and lan
 Adding offline functionality improves usability in areas with limited internet access. It ensures uninterrupted usage and enhances accessibility for users in regions with unreliable connectivity.
 
 
+
 ## 🤔 How to contribute
 
 **Make a fork of this repository**
