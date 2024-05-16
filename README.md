@@ -112,7 +112,7 @@ Technologies that We used to develop this 3D Edition mobile App:
 ## **Follow the steps below**
 
 
-**1. Open Unity HUB Software.**
+**1. Open Unity HUB Software and ADD Unity 2021.3.38 editor**
 
    
 ![install_unity](https://github.com/basheer421/MOI/assets/138756079/296dd41d-ae55-432f-a56d-4c0f43f765ae)
