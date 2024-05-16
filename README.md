@@ -68,9 +68,9 @@ This project aims to enhance the user experiance of MOI mobile app, accessibilit
 - Offer a more immersive and intuitive user experience for navigation.
 - Enable interaction with elements in the 3D environment to improve user understanding and engagement.
 
-### Enhanced Text-to-Speech (TTS) and Speech-to-Text (STT) Interaction
+### Enhanced TTS / STT Interaction
 - Upgrade the existing TTS feature to make it more interactive and user-friendly.
-- Enable TTS system to interact with users, guiding them through app functionalities.
+- Enable TTS system to interact with users.
 - Implement STT feature for verbal commands or requests.
 - Benefit users with speech impairments or limited dexterity.
 
