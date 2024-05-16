@@ -162,6 +162,8 @@ $ git commit -m 'feat: My new feature'
 # Send the code to your remote branch
 $ git push origin my-feature
 ```
+## Misc
+An apk can be downloaded from here: (https://we.tl/t-7txlbVAfIr)
 
 ## 📝 License
 
