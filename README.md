@@ -50,7 +50,7 @@ This project aims to enhance the user experiance of MOI mobile app, accessibilit
 
 ### 🔍 Problems:
 
-- <p style="color: red;">Despite being well-designed, the current government mobile app faces usability challenges.</p>
+- <p style="color: red;">Despite being well-designed, but faces usability challenges.</p>
 
 - <p style="color: red;">Users, including diverse groups such as the young, elderly, and people of determination, find the app slightly complicated to navigate.</p>
 
