@@ -100,7 +100,6 @@ Technologies that We used to develop this 3D Edition mobile App:
 - [Unity 3D](https://unity.com/)
 - [C#](https://docs.microsoft.com/en-us/dotnet/csharp/)
 - [Gamification Mechanics](https://www.interaction-design.org/literature/topics/gamification)
-- [AI-powered Chatbots](https://en.wikipedia.org/wiki/Chatbot)
 - [Interactive 3D Elements](https://threejs.org/)
 
 
